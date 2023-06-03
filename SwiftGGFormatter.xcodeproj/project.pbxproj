@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		90B11FF32A2B8CDA00188D29 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B11FF22A2B8CDA00188D29 /* main.swift */; };
+		90B11FFB2A2B8CFA00188D29 /* SwiftGGFormater in Frameworks */ = {isa = PBXBuildFile; productRef = 90B11FFA2A2B8CFA00188D29 /* SwiftGGFormater */; };
+		90B11FFD2A2B8D0600188D29 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B11FFC2A2B8D0600188D29 /* Mapper.swift */; };
+		90B120002A2B8EB200188D29 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 90B11FFF2A2B8EB200188D29 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,7 @@
 /* Begin PBXFileReference section */
 		90B11FEF2A2B8CDA00188D29 /* SwiftGGFormatter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGGFormatter; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B11FF22A2B8CDA00188D29 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		90B11FFC2A2B8D0600188D29 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B120002A2B8EB200188D29 /* ArgumentParser in Frameworks */,
+				90B11FFB2A2B8CFA00188D29 /* SwiftGGFormater in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				90B11FF22A2B8CDA00188D29 /* main.swift */,
+				90B11FFC2A2B8D0600188D29 /* Mapper.swift */,
 			);
 			path = SwiftGGFormatter;
 			sourceTree = "<group>";
@@ -78,6 +85,10 @@
 			dependencies = (
 			);
 			name = SwiftGGFormatter;
+			packageProductDependencies = (
+				90B11FFA2A2B8CFA00188D29 /* SwiftGGFormater */,
+				90B11FFF2A2B8EB200188D29 /* ArgumentParser */,
+			);
 			productName = SwiftGGFormatter;
 			productReference = 90B11FEF2A2B8CDA00188D29 /* SwiftGGFormatter */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +117,10 @@
 				Base,
 			);
 			mainGroup = 90B11FE62A2B8CDA00188D29;
+			packageReferences = (
+				90B11FF92A2B8CFA00188D29 /* XCRemoteSwiftPackageReference "SwiftGGFormater" */,
+				90B11FFE2A2B8EB200188D29 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 90B11FF02A2B8CDA00188D29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B11FFD2A2B8D0600188D29 /* Mapper.swift in Sources */,
 				90B11FF32A2B8CDA00188D29 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +300,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90B11FF92A2B8CFA00188D29 /* XCRemoteSwiftPackageReference "SwiftGGFormater" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/underthestars-zhy/SwiftGGFormater";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		90B11FFE2A2B8EB200188D29 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90B11FFA2A2B8CFA00188D29 /* SwiftGGFormater */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90B11FF92A2B8CFA00188D29 /* XCRemoteSwiftPackageReference "SwiftGGFormater" */;
+			productName = SwiftGGFormater;
+		};
+		90B11FFF2A2B8EB200188D29 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90B11FFE2A2B8EB200188D29 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90B11FE72A2B8CDA00188D29 /* Project object */;
 }

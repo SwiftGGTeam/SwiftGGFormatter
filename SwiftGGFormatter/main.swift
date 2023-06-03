@@ -6,6 +6,16 @@
 //
 
 import Foundation
+import SwiftGGFormater
+import ArgumentParser
 
-print("Hello, World!")
+struct SwiftGGFormatterCLI: ParsableCommand {
+    @Argument(help: "TPlease provide the file path of the text you want to reorder.")
+    var path: String
 
+    mutating func run() async throws {
+        let file = URL.init(filePath: path)
+        let formater = SwiftGGFormater(file: file, web: URL(string: mapper[file.lastPathComponent]!)!)
+        try await formater.formate()
+    }
+}
