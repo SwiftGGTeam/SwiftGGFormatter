@@ -9,8 +9,13 @@ import Foundation
 import SwiftGGFormater
 import ArgumentParser
 
-struct SwiftGGFormatterCLI: ParsableCommand {
-    @Argument(help: "TPlease provide the file path of the text you want to reorder.")
+@main
+struct SwiftGGFormatterCLI: AsyncParsableCommand {
+    static var configuration: CommandConfiguration {
+        .init(commandName: "SwiftGGFormatter")
+    }
+
+    @Argument(help: "Please provide the file path of the text you want to reorder.")
     var path: String
 
     mutating func run() async throws {

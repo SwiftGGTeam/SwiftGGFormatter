@@ -5,7 +5,7 @@ SwiftGGFormatter is a tool that can reformat SwiftGG's YAML file, arranging its 
 ## Installation
 
 1. Please visit the release page and download the latest version of the CLI.
-2. Move the downloaded CLI to the `/usr/bin/` directory.
+2. Move the downloaded CLI to the `/usr/local/bin/` directory.
 
 ## Get Started
 
