@@ -20,7 +20,15 @@ struct SwiftGGFormatterCLI: AsyncParsableCommand {
 
     mutating func run() async throws {
         let file = URL.init(filePath: path)
-        let formater = SwiftGGFormater(file: file, web: URL(string: mapper[file.lastPathComponent]!)!)
+        let formater = SwiftGGFormater(file: file, web: findURL(path: path))
         try await formater.formate()
+    }
+
+    func findURL(path: String) -> URL {
+        let file = URL.init(filePath: path)
+        let components = file.pathComponents
+        let category = components[components.endIndex - 2]
+        let fileName = file.deletingPathExtension().lastPathComponent
+        return URL(string: "https://developer.apple.com/tutorials/\(category)/\(fileName)")!
     }
 }

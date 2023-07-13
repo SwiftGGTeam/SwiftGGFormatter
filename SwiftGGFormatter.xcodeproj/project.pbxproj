@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		90B11FF32A2B8CDA00188D29 /* SwiftGGFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B11FF22A2B8CDA00188D29 /* SwiftGGFormatter.swift */; };
 		90B11FFB2A2B8CFA00188D29 /* SwiftGGFormater in Frameworks */ = {isa = PBXBuildFile; productRef = 90B11FFA2A2B8CFA00188D29 /* SwiftGGFormater */; };
-		90B11FFD2A2B8D0600188D29 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B11FFC2A2B8D0600188D29 /* Mapper.swift */; };
 		90B120002A2B8EB200188D29 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 90B11FFF2A2B8EB200188D29 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		90B11FEF2A2B8CDA00188D29 /* SwiftGGFormatter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGGFormatter; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B11FF22A2B8CDA00188D29 /* SwiftGGFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGGFormatter.swift; sourceTree = "<group>"; };
-		90B11FFC2A2B8D0600188D29 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		90B120012A2B903F00188D29 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				90B11FF22A2B8CDA00188D29 /* SwiftGGFormatter.swift */,
-				90B11FFC2A2B8D0600188D29 /* Mapper.swift */,
 			);
 			path = SwiftGGFormatter;
 			sourceTree = "<group>";
@@ -137,7 +134,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B11FFD2A2B8D0600188D29 /* Mapper.swift in Sources */,
 				90B11FF32A2B8CDA00188D29 /* SwiftGGFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
